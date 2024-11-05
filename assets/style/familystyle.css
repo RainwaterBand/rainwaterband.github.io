@@ -1,6 +1,30 @@
 #links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   text-align: center;
-  font-size: 1.1vw;
+  font-size: 1.5vw;
+}
+#links a {
+  margin: 1%;
+  text-decoration: none;
+  color: black;
+}
+#links a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 845px) {
+  #links a {
+    font-size: 7vw;
+  }
+}
+#links div {
+  line-height: 3;
+}
+@media screen and (width <= 845px) {
+  #links div {
+    display: none;
+  }
 }
 @media screen and (width <= 845px) {
   #links {
